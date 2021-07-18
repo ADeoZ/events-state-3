@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-export default function DropdownList() {
-  const itemList = ['Profile Information', 'Change Password', 'Become PRO', 'Help', 'Log Out'];
+const itemList = ['Profile Information', 'Change Password', 'Become PRO', 'Help', 'Log Out'];
 
+export default function DropdownList() {
   const [active, setActive] = useState(0)
   const selectItem = (event) => {
     setActive(prev => itemList.indexOf(event.target.innerText));

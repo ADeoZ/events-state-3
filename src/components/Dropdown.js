@@ -10,13 +10,13 @@ export default function Dropdown() {
 
   return (
     <div className="container">
-    <div data-id="wrapper" className={"dropdown-wrapper" + openClass}>
-      <button data-id="toggle" className="btn" onClick={toggleThis}>
-        <span>Account Settings</span>
-        <i className="material-icons">public</i>
-      </button>      
+      <div data-id="wrapper" className={"dropdown-wrapper" + openClass}>
+        <button data-id="toggle" className="btn" onClick={toggleThis}>
+          <span>Account Settings</span>
+          <i className="material-icons">public</i>
+        </button>      
         <DropdownList />
+      </div>
     </div>
-  </div>
   );
 }
